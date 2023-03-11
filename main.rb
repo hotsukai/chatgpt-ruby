@@ -51,7 +51,7 @@ class ChatGptResponse
   end
 end
 
-def talk
+def main
   chat_session = ChatGPTSession.new('You are a helpful assistant.')
 
   loop do
@@ -63,4 +63,4 @@ def talk
   end
 end
 
-talk
+main
