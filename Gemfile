@@ -7,3 +7,5 @@ source "https://rubygems.org"
 gem "faraday", "~> 2.7"
 
 gem "dotenv", "~> 2.8"
+
+gem "rubocop", "~> 1.48"
