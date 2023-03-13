@@ -2,6 +2,8 @@
 
 require 'faraday'
 require 'dotenv'
+require './prompt'
+
 Dotenv.load
 
 class ChatGPTSession
@@ -52,7 +54,7 @@ class ChatGptResponse
 end
 
 def main
-  chat_session = ChatGPTSession.new('You are a helpful assistant.')
+  chat_session = ChatGPTSession.new(PROMPT)
 
   loop do
     print '>> '
